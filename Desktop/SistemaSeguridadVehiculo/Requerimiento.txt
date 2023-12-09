@@ -1,0 +1,35 @@
+Un sistema de seguridad de un automóvil, se podrá activar y desactivar con dos botones distintos, un botón realizará la
+activación y el otro será para desactivación. El estado del sistema de seguridad (activo, inactivo, o alarma disparada)
+debe presentarse en una de las líneas del LCD. El sistema puede pasar de inactivo a activo solo si las puertas están
+cerradas.
+
+El sistema de seguridad debe tener un LCD, un display 7 segmentos, 2 botones, un switch, y 2 leds.
+
+El sistema de seguridad debe iniciar en estado INACTIVO.
+
+Cuando pasen 9 segundos con el sistema INACTIVO y las puertas del vehículo cerradas, el sistema se debe activar
+automáticamente. El conteo de 9 segundos descendente para activarse automáticamente se debe presentar en el
+display 7 segmentos. Cuando se active automáticamente el sistema, en el LCD (segunda línea) debe presentarse el
+mensaje “Activado autom” durante 5 segundos.
+
+El estado de las puertas se presentará en la segunda línea del LCD (indicando CERRADAS o ABIERTAS). El estado de las
+puertas se cambia con el switch.
+
+Si se intenta activar el sistema con las puertas abiertas, se debe presentar un mensaje en el LCD que diga “NO SE
+ACTIVA.” durante 4 segundos y el sistema debe permanecer inactivo.
+
+Cuando el sistema de seguridad del vehículo esté en estado “INACTIVO” y las puertas estén “ABIERTAS” durante más
+de 15 segundos, se debe presentar un mensaje en el LCD que diga “Active sistema”, el cual no se eliminará hasta que se
+cierren puertas.
+
+Mientras el sistema esté en estado “inactivo” y las puertas estén abiertas, se debe encender un led rojo, titilando cada
+segundo.
+
+Si el sistema esté en estado “activo” y las puertas se abren, se debe encender un led AZUL, permanentemente
+indicando que la ALARMA SE DISPARÓ (Además de cambiar el estado del sistema de seguridad en la línea del LCD).
+Permanecerá en este estado hasta que se “inactive” el sistema, presionando 2 veces el botón desactivar, no se debe
+desactivar si se cierren o no las puertas.
+
+SUGERENCIA DE TRABAJO: Utilice todos los elementos solicitados en el requerimiento (funciones, interrupciones,
+matrices, contadores etc.). Implemente la funcionalidad del requerimiento de forma incremental. Guarde una versión
+del programa a medida que vaya incrementando la funcionalidad.
